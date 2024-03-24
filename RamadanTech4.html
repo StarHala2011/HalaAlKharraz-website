@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Do Or Don't</title>
+    <style>
+        body {
+            background-color: rgb(41, 22, 8);
+        }
+
+        .buttons {
+            background-color: rgb(249, 235, 194);
+            width: 1555px;
+            height: 1555px;
+            border: none;
+            color: rgb(39, 25, 8);
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 60px;
+            margin-top: 40px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        img {
+            width: 1000px;
+            height: 1000px;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .LIST{
+            width: max-content;
+            margin: auto;
+        }
+
+        .lastbutton {
+            width: max-content;
+            margin: auto;
+        }
+
+        button {
+            background-color:rgb(255, 220, 194);
+            color:  rgb(34, 19, 6);
+            width: 700px;
+            height: 250px;
+            font-size: 50px;
+            border: black 2px solid;
+            border-radius: 90px;
+            text-align: center;
+            padding: auto;
+            font-family: cursive;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 250px;
+            text-align: center;
+            font-family: fantasy;
+            color: rgb(247, 239, 232);
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 100px;
+            color: white;
+        }
+
+        .green {
+            text-align: center;
+            font-size: 100px;
+            color: green;
+        }
+
+        .red {
+            text-align: center;
+            font-size: 100px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Do Vs Don't Do</h2>
+    <h2> in Ramadan</h2>
+    <h3>Click On The Pictures if the Color is</h3>
+    <h3 class="green">GREEN</h3>
+    <h3>then</h3>
+    <h3 class="green">DO</h3>
+    <h3>if the color is </h3>
+    <h3 class="red">RED</h3>
+    <h3>then</h3>
+    <h3 class="red">DON'T DO</h3>
+
+    <div class="LIST">
+        <div id="buttonRed1">
+            <button class="buttons" id="Anger">
+                <img src="Anger.jpeg" alt="" onclick="CBCR()">
+                <h1>Anger</h1>
+            </button>
+        </div>
+        <div id="buttonGreen1">
+            <button class="buttons" id="Quran">
+                <img src="Quran.jpg" alt="" onclick="CBC()">
+                <h1>Reading Quran</h1>
+
+            </button>
+        </div>
+        <div id="buttonRed2">
+            <button class="buttons" id="Gossiping">
+                <img src="gossiping.jpg" alt="Gossiping" onclick="CBCG()">
+                <h1>Gossiping</h1>
+            </button>
+        </div>
+        <div id="buttonGreen2">
+            <button class="buttons" id="Zikr">
+                <img src="zikr.jpg" alt="" onclick="CBCZ()">
+                <h1>Zikr</h1>
+            </button>
+        </div>
+        <div id="buttonGreen3">
+            <button class="buttons" id="Sadaqah">
+                <img src="sadaqah.jpeg" alt="" onclick="CBCS()">
+                <h1>Sadaqah</h1>
+            </button>
+        </div>
+
+    </div>
+    <script>
+        function CBC() {
+            document.getElementById("Quran").style.backgroundColor = "green";
+        }
+        function CBCR() {
+            document.getElementById("Anger").style.backgroundColor = "red";
+        }
+        function CBCZ() {
+            document.getElementById("Zikr").style.backgroundColor = "green";
+        }
+        function CBCS() {
+            document.getElementById("Sadaqah").style.backgroundColor = "green";
+        }
+        function CBCG() {
+            document.getElementById("Gossiping").style.backgroundColor = "red";
+        }
+    </script>
+    <div class="lastbutton">
+        <a href="Ramadan.html">
+            <button>
+                Is Ramadan Fasting From Food and Drinks Only ?
+            </button>
+        </a>
+
+    </div>
+</body>
+
+</html>

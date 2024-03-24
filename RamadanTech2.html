@@ -1,0 +1,46 @@
+<html>
+
+<head>
+
+    <title>Loading....</title>
+
+    <style>
+        
+        body{
+            background-color: black;
+        }
+        p{
+            font-family: fantasy;
+            color: rgb(255, 212, 162);
+            text-align: center;
+            margin-top: 300px;
+            animation-name: text;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes text{
+            50%{
+                color: rgb(247, 234, 208);
+                font-size: 42px;
+                transform: rotatey(360deg);
+                text-shadow: 50px 50px 6px rgb(42, 23, 2),-50px -50px 6px rgb(42, 23, 2);
+                
+            }
+            
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p>Ramadan Tech By Hala Al Kharraz</p>
+        <script>
+            setTimeout(function () {
+                location.href = "RamadanTech3.html"
+            }, 3000)
+        </script>
+</body>
+
+</html>
